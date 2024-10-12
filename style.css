@@ -1,0 +1,237 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 3%;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-self:stretch;
+    padding-right: 3rem;
+    background-color: var(--color-de-fondo-menu);
+
+
+
+}
+
+/*clase de prueba*/
+.prueva__vector{
+    height: 150 px; left: 4rem;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+     
+}
+
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 1rem;
+    /*left: 24rem;
+    position: absolute;*/
+}
+
+.navegacion__lista {
+    display: none;
+ 
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion{
+    display:flex;
+    flex-direction: row-reverse;
+    align-self: stretch;
+
+}
+
+.presentacion__subtitulo{
+padding:25px 250px 0px 0px;
+font-size:larger;
+font-weight: bolder;
+}
+
+.redes{
+    display:flex;
+    flex-direction:row; 
+    justify-content:space-between;
+    padding-left: 0;
+    padding-right: 30rem;
+    font-weight: bolder;
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi{
+    background-color:aquamarine;
+}
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades__lista{
+display:flex;
+flex-direction: row;
+justify-content:space-between;
+align-items:stretch;
+padding-right: 20rem;
+padding-left: 0;
+
+}
+
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones__lista{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0px 80px 0px 0px;
+}
+
+
+/*------------------------------ Sección de Formación académica--------------------------------*/
+.formacion__lista{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding-left: 0;
+}
+
+
+
+
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos__contenedor{
+    background-color:var(--color-de-fondo);
+}
+
+.proyectos__contenedor1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    
+}
+
+
+
+.proyectos__nombre1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    font-style: bold;
+    font-weight: 1800;
+
+}
+
+
+
+.footer {
+  position:static;
+  left: 0;
+  bottom: 0;
+  top: 10;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+ 
+}
+
+
+
+/*.footer{font-family: 'Courier New', Courier, monospace;
+    background-color: chocolate;
+ 
+
+}*/
+
+
+    
+    
+  
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto{
+    padding: 0px 0px 30px 0px;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
